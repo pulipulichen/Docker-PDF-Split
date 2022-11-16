@@ -1,0 +1,24 @@
+{
+  "name": "docker-pdf-split",
+  "version": "1.0.0",
+  "description": "Split a PDF file with configuration.",
+  "main": "data/split.js",
+  "scripts": {
+    "start": "node data/split.js",
+    "d0.build": "docker-compose build",
+    "d1.start": "docker-compose run app npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pulipulichen/Docker-PDF-Split.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pulipulichen/Docker-PDF-Split/issues"
+  },
+  "homepage": "https://github.com/pulipulichen/Docker-PDF-Split#readme",
+  "dependencies": {
+    "csv-reader": "1.0.10"
+  }
+}
