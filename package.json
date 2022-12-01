@@ -4,9 +4,14 @@
   "description": "Split a PDF file with configuration.",
   "main": "data/split.js",
   "scripts": {
-    "start": "node data/split.js",
+    "split": "node app/split.js",
+    "annots": "node app/annots.js",
+    "split-annots": "node app/split-annots.js",
     "d0.build": "docker-compose build",
-    "d1.start": "docker-compose run app npm run start"
+    "d0.bash": "docker-compose run app bash",
+    "d1.split-annots": "docker-compose run app npm run split-annots",
+    "d2.split": "docker-compose run app npm run split",
+    "d2.annots": "docker-compose run app npm run annots"
   },
   "repository": {
     "type": "git",
@@ -19,6 +24,9 @@
   },
   "homepage": "https://github.com/pulipulichen/Docker-PDF-Split#readme",
   "dependencies": {
-    "csv-reader": "1.0.10"
+    "csv-reader": "1.0.10",
+    "annotpdf": "1.0.15",
+    "fast-glob": "3.2.12",
+    "pdf-page-counter": "1.0.3"
   }
 }

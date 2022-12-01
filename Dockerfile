@@ -8,10 +8,14 @@ RUN apt-get update && apt-get install -y \
     #Get tools from internet
     wget \
     vim \
-    apt-utils
+    apt-utils \
+    p7zip-full
 
 RUN apt-get install -y \
     qpdf
+
+RUN apt-get install -y \
+    zip
 
 #Creating an application directory
 RUN mkdir /app

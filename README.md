@@ -5,8 +5,9 @@ Split a PDF file with configuration.
 
 - Docker and docker-compose: https://docs.docker.com/compose/install/
 - Node.js: https://nodejs.org/en/download/
-# How to use
 
-1. Prepare `data/config.csv` and `data/input.pdf`. You can find examples in `data/demo`. Please setup each filename and page range you want to split from `input.pdf` in `config.csv`.
-2. Excute `npm run d1.start`.
-3. Get output files in `data/output` .
+# Split PDF via Annotations
+
+1. Add **free text** annotations which are started with "|" in the PDF. You can use PDF-XChange Editor to add annotations: https://www.tracker-software.com/product/pdf-xchange-editor
+2. Put the PDF to `input` folder.
+3. Execute `npm run d1.split-annots`.
