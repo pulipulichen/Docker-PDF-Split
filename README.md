@@ -6,6 +6,10 @@ Split a PDF file with configuration.
 - Docker and docker-compose: https://docs.docker.com/compose/install/
 - Node.js: https://nodejs.org/en/download/
 
+# Setup
+
+Execute `npm run d0.build`.
+
 # Split PDF via Annotations
 
 1. Add **free text** annotations which are started with "|" in the PDF. You can use PDF-XChange Editor to add annotations: https://www.tracker-software.com/product/pdf-xchange-editor
